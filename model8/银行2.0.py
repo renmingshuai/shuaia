@@ -119,14 +119,13 @@ def  chaxun(account,password):
             sql3 = "select * from bank where username=%s"
             user2=select(sql3,account)
             print(user2)
-            for i in user2:
-                username = user2[0][1]
-                country = user2[0][3]
-                province = user2[0][4]
-                street = user2[0][5]
-                door = user2[0][6]
-                money = user2[0][7]
-                bank_name = user2[0][8]
+            username = user2[0][1]
+            country = user2[0][3]
+            province = user2[0][4]
+            street = user2[0][5]
+            door = user2[0][6]
+            money = user2[0][7]
+            bank_name = user2[0][8]
 
             info = '''
                         ------------个人信息----------------
