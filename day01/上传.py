@@ -1,0 +1,15 @@
+from  selenium import  webdriver
+import  time
+driver=webdriver.Chrome()
+driver.get(r"file:///C:/Users/baba123/Desktop/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%20(2)/%E7%BB%83%E4%B9%A0%E7%9A%84html/%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%92%8C%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8/autotest.html")
+driver.maximize_window()
+driver.find_element_by_xpath("//*[@id='accountID']").send_keys("我是你爸爸")
+driver.find_element_by_xpath("//*[@id='passwordID']").send_keys("我是密码")
+driver.find_element_by_xpath("//*[@id='areaID']").send_keys("北京市")
+driver.find_element_by_xpath("//*[@id='sexID2']").click()
+driver.find_element_by_xpath("//*[@value='summer']").click()
+driver.find_element_by_xpath("//*[@name='file' and @type='file']").send_keys(r"C:\Users\baba123\Desktop\45E25CF9A090B378BB76FFC9A6B68B89.jpg")
+driver.find_element_by_xpath("//*[@id='buttonID']").click()
+driver.switch_to.alert.accept()
+time.sleep(3)
+driver.quit()
